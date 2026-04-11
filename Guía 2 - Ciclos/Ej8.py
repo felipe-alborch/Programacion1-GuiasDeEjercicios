@@ -11,6 +11,10 @@ import math
 
 for i in range(1,4):
     numero = int(input("Ingresá un número: "))
+    
+    while numero < 0:
+        numero = int(input("Número inválido. Ingresá nuevamentee un número: "))
+    
     opcion = int(input("Selecioná la operación a realizar: "))
     
     if opcion == 1:
@@ -19,7 +23,9 @@ for i in range(1,4):
         potencia = int(input("Ingresá la potencia a la que queres elevar el número: "))
         print(f"El resultado de elevar {numero} a la {potencia} es: {numero**potencia}.")
     else:
-        if numero % 2 == 0:
+        if numero == 0:
+            print("El número es 0 (cero).")
+        elif numero % 2 == 0:
             print(f"El número {numero} es par.")
         else:
             print(f"El número {numero} es impar.")
