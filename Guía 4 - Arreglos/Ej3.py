@@ -27,6 +27,6 @@ for i in range(cantidadDeComponentes):
     arregloC.append(suma)
 
 # Mostrando el arreglo 'C'
-print("\n\n")
-for i in range(10):
+print("\n\Mostrando el Arreglo 'C'...")
+for i in range(cantidadDeComponentes):
     print(f"Posición {i}: {arregloC[i]}.")
